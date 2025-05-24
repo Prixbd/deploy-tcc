@@ -1,0 +1,87 @@
+/* src/pages/Home/styles.css */
+
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #f0f2f5;
+    font-family: Arial, sans-serif;
+}
+
+.home-box {
+    background-color: #fff;
+    padding: 30px 20px;
+    border-radius: 12px;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.home-title {
+    font-size: 24px;
+    margin-bottom: 24px;
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+.home-button {
+    display: block;
+    width: 100%;
+    padding: 14px 20px;
+    margin-bottom: 16px;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.home-button.green {
+    background-color: #275ee0;
+    color: #fff;
+}
+
+.home-button.green:hover {
+    background-color: #1f4bb5;
+}
+
+.home-button.white {
+    background-color: #fff;
+    color: #2c3e50;
+    border: 1px solid #ccc;
+}
+
+.home-button.white:hover {
+    background-color: #f1f1f1;
+    border-color: #275ee0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .home-box {
+        padding: 24px 16px;
+    }
+
+    .home-title {
+        font-size: 22px;
+    }
+
+    .home-button {
+        padding: 12px 16px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-title {
+        font-size: 20px;
+    }
+
+    .home-button {
+        font-size: 13px;
+    }
+}

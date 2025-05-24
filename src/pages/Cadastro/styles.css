@@ -1,0 +1,67 @@
+/* src\pages\Cadastro\styles.css */
+
+.pagina-cadastro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.pagina-cadastro::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+      radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 40% 40%, rgba(39, 94, 224, 0.1) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.pagina-cadastro::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: 
+      linear-gradient(45deg, transparent 40%, rgba(255, 255, 255, 0.05) 50%, transparent 60%);
+  animation: shimmer 8s infinite linear;
+  pointer-events: none;
+}
+
+@keyframes shimmer {
+  0% {
+      transform: translateX(-100%) translateY(-100%) rotate(45deg);
+  }
+  100% {
+      transform: translateX(100%) translateY(100%) rotate(45deg);
+  }
+}
+
+h2 {
+  color: #2c3e50;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+/* Efeitos para dispositivos menores */
+@media (max-width: 768px) {
+  .pagina-cadastro {
+      padding: 20px 15px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 70%, #667eea 100%);
+  }
+  
+  .pagina-cadastro::after {
+      animation-duration: 12s;
+  }
+}

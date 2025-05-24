@@ -1,0 +1,114 @@
+/* src\components\FormularioCadastro\styles.css */
+
+.container {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+    width: 100%;
+    max-width: 820px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+  
+.container img {
+    width: 180px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+}
+  
+.form-Tittle {
+    font-size: 24px;
+    text-align: center;
+    font-weight: 600;
+    color: #275ee0;
+    margin-bottom: 10px;
+}
+  
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    gap: 18px;
+}
+  
+input,
+button {
+    width: 100%;
+    padding: 14px 16px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: inherit;
+}
+  
+input {
+    border: 2px solid #e0e0e0;
+    transition: border-color 0.3s ease;
+    background-color: #fafafa;
+}
+
+input:focus {
+    outline: none;
+    border-color: #275ee0;
+    background-color: white;
+}
+  
+button {
+    background: linear-gradient(135deg, #275ee0, #3b6ef7);
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    border: none;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+  
+button:hover {
+    background: linear-gradient(135deg, #2250bb, #335edc);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(39, 94, 224, 0.3);
+}
+
+button:active {
+    transform: translateY(0);
+}
+  
+.link-usuarios {
+    margin-top: 30px;
+    text-decoration: none;
+    color: #666;
+    font-size: 15px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+  
+.link-usuarios:hover {
+    color: #275ee0;
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        padding: 30px 20px;
+        margin: 20px;
+        width: calc(100% - 40px);
+    }
+    
+    .form-Tittle {
+        font-size: 20px;
+    }
+    
+    form {
+        max-width: 100%;
+    }
+}

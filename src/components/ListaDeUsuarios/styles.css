@@ -1,0 +1,94 @@
+/* src/components/ListaDeUsuarios/styles.css */
+
+.tabela-container {
+  width: 95%;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  text-align: center;
+  color: #275ee0;
+  margin-bottom: 24px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.tabela-jogadores {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+.tabela-jogadores th,
+.tabela-jogadores td {
+  border: 1px solid #ddd;
+  padding: 12px 16px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.tabela-jogadores th {
+  background-color: #275ee0;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.tabela-jogadores tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.tabela-jogadores tr:hover {
+  background-color: #eef3ff;
+}
+
+.mensagem {
+  text-align: center;
+  color: #555;
+  font-size: 16px;
+  padding: 20px;
+  background-color: #f2f4f8;
+  border-radius: 8px;
+  border-left: 4px solid #275ee0;
+  margin-top: 20px;
+}
+
+
+@media (max-width: 768px) {
+  .tabela-container {
+    padding: 16px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .tabela-jogadores th,
+  .tabela-jogadores td {
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  .mensagem {
+    font-size: 15px;
+    padding: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tabela-jogadores th,
+  .tabela-jogadores td {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+}
